@@ -1,0 +1,258 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenido Body*/
+
+
+body{
+    background-color: white;
+    height: 300px;
+    width: 100%;
+}
+
+/*Contenido de Headers y Nav*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-image: url(../img/fotoheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: black;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+a:hover{
+    width: 100%;
+    color: orange;
+}
+
+
+/*Contenido de los mains*/
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/fondo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1800px;
+    width: 100%;
+
+}
+
+
+
+/* Main Index*/
+.img_main{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+ul{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+
+.padre{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.hijo{
+flex: 25%;
+padding: 5px;
+}
+
+
+
+/*Main Productos*/
+
+#grilla_productos { 
+    display: grid;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-areas:"a1 a2 a3"
+                        "a4 a5 a6"
+                        "a7 a8 a9";
+    column-gap: 20px;
+    row-gap: 60px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.hijo_productos{
+    width: 80%;
+    height: 80%;
+    transition: all 1s;
+    filter: grayscale(100%);
+}
+
+.hijo_productos:hover{
+    transform: scale(1.2,1.2);
+    filter: grayscale(0);
+}
+
+.img_deck{
+    width: 100%;
+    height: 100%;
+    }
+
+#boton_producto{
+        text-decoration: none;
+        padding: 20px;
+        font-size: 1.5rem;
+        position:relative;
+        background-color: orange;
+        color: black;
+        border-radius: 50px;
+        }
+
+
+/* Main Torneos*/
+
+table{
+    background-color: rgba(199, 134, 13, 0.808);
+    border: 1px; color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    font-size: 20px;
+}
+
+th{
+    font-size: 30px;
+}
+
+h3{
+    text-decoration-line: underline;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+iframe{
+    height:130px;
+    width: 20%;
+}
+
+
+/* Main Contacto*/
+
+
+/* Main Fotos o Galeria*/
+
+.img_galeria{
+    height: 150px;
+    width: 20%;
+    margin-top: 20px;
+}
+
+
+
+
+/* Contenido Footer*/
+
+footer{
+    background-color: black;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+}
+p{
+    color:aqua
+}
+
+
+/* MediaQueri*/
+@media only screen and (max-width:500px){
+
+    nav{
+        height: 70%;
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    ul{
+    height: 250px;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    }
+
+    li{
+        font-size: 20px;
+    }
+
+/*Media al HTML de productos*/
+    #grilla_productos{
+        display: grid;
+        height: 20000px;
+        grid-template-columns: 90%;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-areas: 
+                        "foto1"
+                        "foto2"
+                        "foto3"
+                        "foto4"
+                        "foto5"
+                        "foto6";
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    main{
+        height: 4000px;
+    }
+
+
+    .hijo{
+        flex: 100%;
+    }
+}
+
+
+
